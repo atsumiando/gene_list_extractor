@@ -25,6 +25,8 @@ Example of gene_list_file is provided as gene_list.txt.
 	geneX
 
 # Description of file format
+gene_list_extractor.py requires -i input_gene_file -l gene_list_file -o output_file -c1 column_number_of_gene_id_in_input_gene_file -c2 column_number_of_gene_id_in_gene_list_file.
+
  -h, --help            show this help message and exit
  
  -i INPUT, --input INPUT		input gene expression file name
@@ -38,9 +40,14 @@ Example of gene_list_file is provided as gene_list.txt.
  -c2 COLUMN_LIST, --column_list COLUMN_LIST		column number; gene ID location in gene list file
 
 # Outcome
+Example of output_file is provided as gene_data.txt.
 
-	NAME1	id1 250	B #from 2nd_line(students total scores and grade)
-	NAME2	id2 231	C #from 2nd_line(students total scores and grade)
+	geneA	1	3	5.5	7	2
+	geneG	0.01	0.03	0.5	0.07	0.02
+	geneI	8	9	5	7	4
+	geneP	6.5	3.5	5.5	9.5	11.5
+	geneW	190	23	9.6	790	2.4
+	geneX	290	3.6	565.5	7.5	280
 
-Setting of grades are A>=92%, 92%>A->88%, 88%>B+>=84%, 84%>B>=80%, 80%>B->=76%, 76%>C+>=72%, 72%>C>=68%, 68%>C->=64%, 64%>D+>=60, 60%>D>=56%, 56%>D->=52%, and F<52%.
+
 
