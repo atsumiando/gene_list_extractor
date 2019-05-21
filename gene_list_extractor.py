@@ -2,7 +2,7 @@ import argparse
 
 
 
-parser = argparse.ArgumentParser(usage='gene_list_extractor.py -i input_gene_file -l gene_list_file -o output_file -c1 1 -c2 1', add_help=True,formatter_class=argparse.RawDescriptionHelpFormatter)
+parser = argparse.ArgumentParser(usage='python gene_list_extractor.py -i input_gene_file -l gene_list_file -o output_file -c1 1 -c2 1', add_help=True,formatter_class=argparse.RawDescriptionHelpFormatter)
 parser.add_argument('-i','--input',help = 'input gene expression file name', required=True)
 parser.add_argument('-l','--list',help = 'input gene list file name', required=True)
 parser.add_argument('-o', '--output', help = 'output file name',required=True)
