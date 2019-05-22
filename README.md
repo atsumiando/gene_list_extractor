@@ -1,7 +1,7 @@
 # gene_list_extractor
 Extract gene expression data which matches to custom gene list.
 
-It is python codes and use "python gene_list_extractor.py -i input_gene_file -l gene_list_file -o output_file -c1 1 -c2 1" to run!
+It is python codes and use "python gene_list_extractor.py -i input_gene_file -l gene_list_file -o output_file (-c1 1 -c2 1)" to run!
 
 # File format
 Example of input_gene_file is provided as gene_expression_data.txt. 
@@ -25,7 +25,7 @@ Example of gene_list_file is provided as gene_list.txt.
 	geneX
 
 # Description of file format
-gene_list_extractor.py requires -i input_gene_file -l gene_list_file -o output_file -c1 column_number_of_gene_id_in_input_gene_file -c2 column_number_of_gene_id_in_gene_list_file.
+gene_list_extractor.py requires -i input_gene_file -l gene_list_file -o output_file. Those parameters are optional; -c1 column_number_of_gene_id_in_input_gene_file -c2 column_number_of_gene_id_in_gene_list_file.
 
  -h, --help            show this help message and exit
  
@@ -35,9 +35,9 @@ gene_list_extractor.py requires -i input_gene_file -l gene_list_file -o output_f
  
  -o OUTPUT, --output OUTPUT		output file name
  
- -c1 COLUMN_INPUT, --column_input COLUMN_INPUT		column number; gene ID location in input gene expression file
+ -c1 COLUMN_INPUT, --column_input COLUMN_INPUT		default 1; column number in gene ID location in input gene expression file
  
- -c2 COLUMN_LIST, --column_list COLUMN_LIST		column number; gene ID location in gene list file
+ -c2 COLUMN_LIST, --column_list COLUMN_LIST		default 1; column number in gene ID location in gene list file
 
 # Outcome
 Example of output_file is provided as gene_data.txt.
