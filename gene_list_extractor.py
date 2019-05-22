@@ -2,12 +2,12 @@ import argparse
 
 
 
-parser = argparse.ArgumentParser(usage='python gene_list_extractor.py -i input_gene_file -l gene_list_file -o output_file -c1 1 -c2 1', add_help=True,formatter_class=argparse.RawDescriptionHelpFormatter)
+parser = argparse.ArgumentParser(usage='python gene_list_extractor.py -i input_gene_file -l gene_list_file -o output_file', add_help=True,formatter_class=argparse.RawDescriptionHelpFormatter)
 parser.add_argument('-i','--input',help = 'input gene expression file name', required=True)
 parser.add_argument('-l','--list',help = 'input gene list file name', required=True)
 parser.add_argument('-o', '--output', help = 'output file name',required=True)
-parser.add_argument('-c1', '--column_input',help = 'column number; gene ID location in input gene expression file', type=int,required=True)
-parser.add_argument('-c2', '--column_list',help = 'column number; gene ID location in gene list file', type=int,required=True)
+parser.add_argument('-c1', '--column_input',help = 'default 1; column number in gene ID location in input gene expression file', type=int,default = 1)
+parser.add_argument('-c2', '--column_list',help = 'default 1; column number in gene ID location in gene list file', type=int,default = 1)
 
 args = parser.parse_args()
 
